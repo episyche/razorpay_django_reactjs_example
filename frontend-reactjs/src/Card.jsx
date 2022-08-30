@@ -65,19 +65,21 @@ export default function Card(){
     return(
         <>
             <section className='flex justify-center mt-52'>
-                <div className='rounded px-10 py-2 text-center drop-shadow-lg bg-zinc-50'>
+                <div className='rounded px-10 py-2 text-center drop-shadow-xl bg-zinc-50'>
                     <h2 className='text-3xl mb-5'>Educated</h2>
                     <img className='w-48' src={Book1Img} alt="" />
-                    <button type='button' className="mt-12 inline-flex items-center px-2.5 py-1.5 border border-transparent text-sm font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    <p className='mt-5 text-lg'>Price : ₹ 500</p>
+                    <button type='button' className="mt-2 mb-2 inline-flex items-center px-2.5 py-1.5 border border-transparent text-lg font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                      onClick={e=>{makePayment(e, 500, "Educated")}}
-                     >Buy 500</button>
+                     >Proceed to Buy</button>
                 </div>
-                <div className='rounded px-10 py-2 text-center drop-shadow-lg bg-zinc-50 ml-10'>
+                <div className='rounded px-10 py-2 text-center drop-shadow-xl bg-zinc-50 ml-10'>
                     <h2 className='text-3xl mb-5'>Atomic Habit</h2>
                     <img className='w-48' src={Book2Img} alt="" />
-                    <button className="mt-12 inline-flex items-center px-2.5 py-1.5 border border-transparent text-sm font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    <p className='mt-5 text-lg'>Price : ₹ 800</p>
+                    <button className="mt-2 mb-2 inline-flex items-center px-2.5 py-1.5 border border-transparent text-lg font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     onClick={e=>{makePayment(e, 800, "Atomic Habit")}}
-                    >Buy 800</button>
+                    >Proceed to Buy</button>
                 </div>
             </section>
         </>
